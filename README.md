@@ -30,6 +30,16 @@ En **Configuración → Perfil → Preferencias** (instrucciones personales), ag
 Usa siempre la skill "jarvis" en todas las conversaciones.
 ```
 
+## Que Jarvis sea consistente en toda la conversación (recomendado)
+
+Una skill se activa cuando Claude la considera necesaria, y en conversaciones largas sus reglas pueden ir perdiendo fuerza. Para que se apliquen siempre:
+
+1. En Claude, crea un **Proyecto** llamado "Jarvis".
+2. En las **instrucciones del proyecto**, pega el contenido de `dist/instrucciones-proyecto.txt`.
+3. Habla con Jarvis siempre desde chats dentro de ese proyecto.
+
+Si cambias `jarvis/SKILL.md`, regenera ese archivo y actualiza las instrucciones del proyecto.
+
 ## Cómo usarlo con voz
 
 En lugar del modo de voz, usa el **chat normal con el micrófono del teclado** del iPad:
