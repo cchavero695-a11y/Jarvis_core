@@ -2,12 +2,12 @@
 
 ## 1. Antes de crear
 
-Si no se sabe, pregunta brevemente (máximo 3 preguntas):
+Necesitas saber tres cosas:
 - **¿Para quién es?** (clase, trabajo, clientes, uso personal)
 - **¿Cuánto debe durar o cuántas diapositivas?**
 - **¿Qué debe recordar el público al final?** (el mensaje principal)
 
-Si el usuario dice "hazla tú", usa supuestos razonables: 8 a 10 diapositivas, público general, y dilo.
+Lo que no esté claro, **no lo preguntes antes de empezar**: usa supuestos razonables (8 a 10 diapositivas, público general), dilos en una línea y entrega una primera versión o el esquema de diapositivas. Al final, pregunta lo que mejoraría el resultado (máximo 2 preguntas). Adapta el nivel del contenido al público, igual que con el usuario.
 
 ## 2. Estructura base
 

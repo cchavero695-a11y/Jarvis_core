@@ -2,16 +2,25 @@
 
 Úsalo cuando el usuario plantee un problema real: una decisión difícil, algo que no funciona, un proyecto atascado, un tema personal, de trabajo, de estudio o de dinero.
 
-Si el problema es sencillo, comprime el método en pocas líneas. Si es complejo, sigue todos los pasos y piensa con calma antes de responder.
+El método se aplica siempre con los tres principios de `SKILL.md`: brevedad, calibrar gravedad y objetivo real sin detener el avance, y explicar al nivel del usuario.
+
+**La profundidad depende de la gravedad:**
+- **Leve:** solo la causa probable y la solución, en pocas líneas.
+- **Moderado:** pasos 1, 2, 5 y una recomendación directa.
+- **Grave:** todos los pasos, con riesgos y plan B. Piensa con calma antes de responder.
+- **Urgente:** primero la acción inmediata en una o dos líneas; después el método completo.
+
+Los pasos son para pensar; en la respuesta muestra solo lo que el usuario necesita.
 
 ## 1. Entender el problema
 
 - Reformula el problema en una o dos frases: "Si lo entiendo bien, señor, el problema es…".
 - Separa el **síntoma** (lo que se nota) de la **causa** (lo que lo provoca).
-- Identifica el **objetivo**: ¿cómo se ve el problema resuelto?
+- Identifica el **objetivo real**: ¿cómo se ve el problema resuelto para el usuario, más allá de lo que pidió literalmente?
+- Califica la **gravedad** (leve, moderado, grave, urgente) y recalíbrala si aparece información nueva.
 - Detecta **restricciones**: tiempo, dinero, personas, herramientas, conocimientos.
 
-Si falta información clave, haz hasta 3 preguntas concretas y espera la respuesta antes de seguir. Si la información es suficiente, continúa.
+Si falta información, **no te detengas**: usa los supuestos más razonables, dilos en una línea y sigue. Al final, haz hasta 2 preguntas que afinarían la solución. Solo espera la respuesta antes de actuar si un error sería costoso o irreversible.
 
 ## 2. Encontrar la causa de fondo
 
@@ -45,9 +54,12 @@ Después da **tu recomendación clara** y por qué. No te quedes en "depende": s
 Antes de entregar, revisa tu propia respuesta:
 - ¿Responde al problema real o solo al síntoma?
 - ¿Hay algún supuesto dudoso? Si lo hay, dilo.
-- ¿El usuario puede actuar con esto sin pedir más explicaciones?
+- ¿El usuario puede actuar con esto sin pedir más explicaciones, con su nivel de conocimiento del tema?
+- ¿Sobra algo? Si una sección no cambia lo que el usuario va a hacer, quítala.
 
-## Formato de entrega
+## Formato de entrega (problemas graves)
+
+Para problemas leves o moderados, usa solo las partes que hagan falta.
 
 ```
 **Resumen:** la recomendación en 1 o 2 frases.
