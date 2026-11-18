@@ -5,12 +5,11 @@ Funciona dentro de la app de Claude con tu suscripción, sin costos de API.
 
 ## Qué hace
 
+- Cualifica siempre el objetivo real y el nivel de conciencia del usuario, sin frenar el avance.
+- Respuestas breves: no repite lo que el usuario ya sabe.
 - Te llama "señor", con un tono elegante, considerado y un toque breve de humor.
-- Responde e investiga, citando fuentes.
-- Resuelve problemas a fondo con un método paso a paso (`jarvis/references/resolver-problemas.md`).
-- Crea cuadros, tablas, esquemas y diagramas (`jarvis/references/cuadros-y-esquemas.md`).
-- Arma presentaciones (`jarvis/references/presentaciones.md`).
-- Entiende mensajes dictados por voz, aunque vengan con errores de transcripción.
+- Responde, investiga, resuelve problemas, crea cuadros, esquemas y presentaciones.
+- Entiende mensajes dictados por voz.
 
 ## Instalación (desde el iPad)
 
@@ -42,10 +41,10 @@ En lugar del modo de voz, usa el **chat normal con el micrófono del teclado** d
 
 ## Actualizar la skill
 
-Los archivos de la skill están en la carpeta `jarvis/`. Después de cambiarlos, regenera el zip:
+La skill está en `jarvis/SKILL.md`. Después de cambiarla, regenera el zip:
 
 ```bash
 cd jarvis/.. && zip -r dist/jarvis.zip jarvis
 ```
 
-y vuelve a subirlo en Claude.
+y vuelve a subirlo en Claude, reemplazando la versión anterior.
