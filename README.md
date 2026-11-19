@@ -38,7 +38,7 @@ Una skill se activa cuando Claude la considera necesaria, y en conversaciones la
 2. En las **instrucciones del proyecto**, pega el contenido de `dist/instrucciones-proyecto.txt`.
 3. Habla con Jarvis siempre desde chats dentro de ese proyecto.
 
-Si cambias `jarvis/SKILL.md`, regenera ese archivo y actualiza las instrucciones del proyecto.
+Si cambias `.claude/skills/jarvis/SKILL.md`, regenera ese archivo y actualiza las instrucciones del proyecto.
 
 ## Cómo usarlo con voz
 
@@ -51,20 +51,30 @@ En lugar del modo de voz, usa el **chat normal con el micrófono del teclado** d
 
 ## Actualizar la skill
 
-La skill está en `jarvis/SKILL.md`. Después de cambiarla, regenera el zip:
+La skill está en `.claude/skills/jarvis/SKILL.md`. Después de cambiarla, regenera el zip:
 
 ```bash
-cd jarvis/.. && zip -r dist/jarvis.zip jarvis
+cd .claude/skills && zip -r ../../dist/jarvis.zip jarvis
 ```
 
 y vuelve a subirlo en Claude, reemplazando la versión anterior.
 
 ## Skill "ver-video": Gemini ve y escucha tus videos
 
-Carpeta `ver-video/` (zip listo en `dist/ver-video.zip`). Manda un video adjunto o un enlace de YouTube a Gemini
+Carpeta `.claude/skills/ver-video/` (zip listo en `dist/ver-video.zip`). Manda un video adjunto o un enlace de YouTube a Gemini
 y devuelve: resumen, escenas con marcas de tiempo, texto en pantalla, transcripción, música, estilo y momentos clave.
 
 - Necesita una clave gratis de Google AI Studio: https://aistudio.google.com/apikey
 - En Claude Code en la nube: se guarda como secreto de red del entorno para `generativelanguage.googleapis.com`
   (cabecera `x-goog-api-key`). En tu ordenador: `export GEMINI_API_KEY=...`.
-- Prueba: `python3 ver-video/motor/ver_video.py comprobar`
+- Prueba: `python3 .claude/skills/ver-video/motor/ver_video.py comprobar`
+
+## Skill "aprende": de videos a skills
+
+Carpeta `.claude/skills/aprende/` (zip en `dist/aprende.zip`). Origen: github.com/deniscorral3am/aprende-skill (MIT).
+Mira videos de YouTube, listas, canales o pódcasts, aprende el método y lo guarda como skill nueva en `.claude/skills/`.
+
+## Skills en este repositorio
+
+Todas las skills viven en `.claude/skills/`: `jarvis`, `ver-video` y `aprende`. Claude Code las carga solas en cualquier
+sesión abierta sobre este repositorio. Para la app de Claude, sube los zips de `dist/` en Configuración → Skills.
