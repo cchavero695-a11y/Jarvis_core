@@ -58,3 +58,13 @@ cd jarvis/.. && zip -r dist/jarvis.zip jarvis
 ```
 
 y vuelve a subirlo en Claude, reemplazando la versión anterior.
+
+## Skill "ver-video": Gemini ve y escucha tus videos
+
+Carpeta `ver-video/` (zip listo en `dist/ver-video.zip`). Manda un video adjunto o un enlace de YouTube a Gemini
+y devuelve: resumen, escenas con marcas de tiempo, texto en pantalla, transcripción, música, estilo y momentos clave.
+
+- Necesita una clave gratis de Google AI Studio: https://aistudio.google.com/apikey
+- En Claude Code en la nube: se guarda como secreto de red del entorno para `generativelanguage.googleapis.com`
+  (cabecera `x-goog-api-key`). En tu ordenador: `export GEMINI_API_KEY=...`.
+- Prueba: `python3 ver-video/motor/ver_video.py comprobar`
