@@ -1,0 +1,7 @@
+[
+  {
+    "fuente": "https://youtu.be/5j4HmfgPCDI",
+    "ok": false,
+    "error": "ERROR: [youtube] 5j4HmfgPCDI: Unable to download API page: ('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')) (caused by ProxyError(\"('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)'))\")); please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U"
+  }
+]
