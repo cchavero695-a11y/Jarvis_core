@@ -24,16 +24,9 @@ const k = (f: number, a: number, b: number, from: number, to: number, easing?: (
   interpolate(f, [a, b], [from, to], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing});
 
 /* ----------------------------------------------------------- capas base */
-/** Fondo gris claro con trama de pantalla (rejilla fina) + viñeta oscura fuerte. */
+/** Fondo gris claro + viñeta oscura fuerte. */
 const Fondo: React.FC<{viñeta: number}> = ({viñeta}) => (
   <AbsoluteFill style={{background: '#ECECEC'}}>
-    <AbsoluteFill
-      style={{
-        backgroundImage:
-          'repeating-linear-gradient(0deg, rgba(0,0,0,0.035) 0 1px, transparent 1px 5px),' +
-          'repeating-linear-gradient(90deg, rgba(0,0,0,0.035) 0 1px, transparent 1px 5px)',
-      }}
-    />
     <AbsoluteFill
       style={{
         opacity: viñeta,
@@ -42,6 +35,18 @@ const Fondo: React.FC<{viñeta: number}> = ({viñeta}) => (
       }}
     />
   </AbsoluteFill>
+);
+
+/** Capa de ajuste: trama de pantalla (líneas / cuadraditos) encima de TODO, también de letras y dibujos. */
+const Trama: React.FC = () => (
+  <AbsoluteFill
+    style={{
+      pointerEvents: 'none',
+      backgroundImage:
+        'repeating-linear-gradient(0deg, rgba(0,0,0,0.075) 0, rgba(0,0,0,0.075) 1.5px, rgba(0,0,0,0) 3px, rgba(0,0,0,0) 6px),' +
+        'repeating-linear-gradient(90deg, rgba(0,0,0,0.075) 0, rgba(0,0,0,0.075) 1.5px, rgba(0,0,0,0) 3px, rgba(0,0,0,0) 6px)',
+    }}
+  />
 );
 
 const Oro: React.FC<{children: React.ReactNode; size: number; style?: React.CSSProperties}> = ({children, size, style}) => (
@@ -275,6 +280,7 @@ export const Definir: React.FC = () => {
               <Manzana />
             </AbsoluteFill>
           </CameraMotionBlur>
+          <Trama />
           {corteFinal && <AbsoluteFill style={{boxShadow: 'inset 0 0 0 3px rgba(40,40,40,0.75)'}} />}
         </AbsoluteFill>
       )}
