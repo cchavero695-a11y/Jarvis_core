@@ -78,3 +78,14 @@ Mira videos de YouTube, listas, canales o pódcasts, aprende el método y lo gua
 
 Todas las skills viven en `.claude/skills/`: `jarvis`, `ver-video` y `aprende`. Claude Code las carga solas en cualquier
 sesión abierta sobre este repositorio. Para la app de Claude, sube los zips de `dist/` en Configuración → Skills.
+
+## Skills de investigación de redes sociales (ScrapeCreators)
+
+13 skills en `.claude/skills/` (origen: github.com/ScrapeCreators/social-media-research-skills, MIT):
+`creator-profile-teardown`, `outlier-post-finder`, `transcript-intelligence`, `comment-mining`,
+`competitor-social-research`, `trend-discovery`, `influencer-prospecting`, `audience-research`,
+`ad-library-teardown`, `social-listening-brief`, `product-demand-research`, `content-repurposing` y `scrapecreators-api`.
+
+Necesitan una clave de scrapecreators.com guardada como Secreto de red del entorno
+(host `api.scrapecreators.com`, cabecera `x-api-key`, sin prefijo). Ver `CLAUDE.md` para el flujo
+"analizar un perfil a partir de su link".
