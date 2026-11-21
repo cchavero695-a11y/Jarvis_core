@@ -58,3 +58,15 @@ cd jarvis/.. && zip -r dist/jarvis.zip jarvis
 ```
 
 y vuelve a subirlo en Claude, reemplazando la versión anterior.
+
+## Herramientas de imágenes y video (sesiones en la nube)
+
+Cada sesión nueva de Claude Code en la nube que use este repositorio ejecuta
+`.claude/hooks/session-start.sh`, que instala junto a este repositorio:
+
+- **BananaBatch** (con Streamlit): `bananabatch generate -i prompts.csv` o
+  `streamlit run $BANANABATCH_DIR/bananabatch/gui/app.py`
+- **Quickstart Veo 3.1 / Nano Banana** (tu fork):
+  `cd $VEO_QUICKSTART_DIR && npm run dev`
+
+Ambas leen la clave de `GEMINI_PAID_API_KEY` (ver `docs/clave-gemini-pago.md`).
